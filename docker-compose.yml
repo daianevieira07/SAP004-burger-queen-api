@@ -11,7 +11,7 @@ services:
     volumes:
       - ./:/app:cached
     networks:
-      - store-network
+      - bq-network
     depends_on:
       - db
 
@@ -25,7 +25,7 @@ services:
     volumes:
       - ./:/app:cached
     networks:
-      - store-network
+      - bq-network
     depends_on:
       - db
 
